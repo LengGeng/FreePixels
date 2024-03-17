@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "freepixels",
+  "version": "${version}",
+  "name": "FreePixels",
+  "description": "FreePixels server plugin",
+  "authors": [
+    "zhizi",
+    "LengGeng"
+  ],
+  "contact": {
+    "website": "https://mc.freepixels.cn",
+    "repo": "https://github.com/LengGeng/FreePixels"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/freepixels/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "cn.freepixels.client.FreePixelsClient"
+    ],
+    "server": [
+      "cn.freepixels.server.FreePixelsServer"
+    ],
+    "main": [
+      "cn.freepixels.FreePixels"
+    ]
+  },
+  "mixins": [
+    "freepixels.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
